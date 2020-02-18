@@ -1,0 +1,25 @@
+{
+    "name": "dongbei",
+    "displayName": "dongbei",
+    "description": "VS Code syntax highlight for Dongbei",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dongbei",
+            "aliases": ["Dongbei", "dongbei"],
+            "extensions": [".dongbei"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dongbei",
+            "scopeName": "source.dongbei",
+            "path": "./syntaxes/dongbei.tmLanguage.json"
+        }]
+    }
+}

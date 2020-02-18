@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Dongbei",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numerics"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"functions": {
+			"patterns": [{
+				"name": "support.function",
+				"match": "(唠\\s*唠\\s*：|你\\s*吱\\s*声)"
+			}]
+		},
+		"variables":{
+			"patterns":[{
+				"name": "support.variable",
+				"match": "【.*】"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "markup.bold",
+				"match": "(的|减|加|跟|比|还\\s*大|还\\s*小|是\\s*(不\\s*是)?|啥\\s*也\\s*不\\s*是|刨\\s*掉\\s*一\\s*堆\\s*堆|乘|除\\s*以?)"
+			}]
+		},
+		"numerics": {
+			"patterns": [{
+				"name": "constant.numeric",
+				"match": "(零|鸭蛋|一|二|俩|两|三|仨|四|五|六|七|八|九|十|[0-9]|的\\s*老\\s*(大|幺)?|有\\s*几\\s*个\\s*坑|拉\\s*饥\\s*荒)"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.dongbei",
+				"match": "(#.*)$"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.dongbei",
+				"match": "(尥\\s*蹶\\s*子|接\\s*着\\s*磨\\s*叽|阶\\s*级\\s*(的\\s*接\\s*班\\s*银)?|的\\s*新\\s*对\\s*象|俺|翠\\s*花\\s*，\\s*上|辟\\s*谣|保\\s*准|寻\\s*思\\s*：|(从\\s*一\\s*而\\s*终|在\\s*苹\\s*果\\s*总\\s*部)?磨\\s*叽\\s*：|磨\\s*叽\\s*完\\s*了\\s*[。！]*|要\\s*行\\s*咧\\s*就\\s*|要\\s*不\\s*行\\s*咧\\s*就\\s*|开\\s*整\\s*：|整\\s*(完\\s*了)?[。！]*|咋\\s*整\\s*：|滚\\s*犊\\s*子\\s*吧)"
+			},
+			{
+				"name": "keyword.control.dongbei2",
+				"match": "(一\\s*样\\s*一\\s*样\\s*的\\s*？|来\\s*了\\s*(个|群\\s*路\\s*银)?|装|在|、|(走|稍)\\s*(走|稍)?|掐\\s*头|去\\s*尾|(都)?\\s*是\\s*活\\s*雷\\s*锋|削|稍\\s*稍|从|到|步?[！。]\\s*)"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.dongbei",
+			"begin": "“",
+			"end": "”",
+			"patterns": [
+				{
+					"name": "constant.character.escape.dongbei",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.dongbei"
+}
