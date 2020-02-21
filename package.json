@@ -2,7 +2,7 @@
     "name": "dongbei",
     "displayName": "dongbei",
     "description": "VS Code syntax highlight for Dongbei",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "mingjun97",
     "repository": "https://github.com/mingjun97/dongbei-vscode",
     "engines": {
