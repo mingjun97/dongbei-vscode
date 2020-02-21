@@ -1,0 +1,3 @@
+[submodule ".vscode-test/dongbei"]
+	path = .vscode-test/dongbei
+	url = https://github.com/zhanyong-wan/dongbei
