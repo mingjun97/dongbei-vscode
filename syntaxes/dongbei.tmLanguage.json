@@ -34,7 +34,7 @@
 		"variables":{
 			"patterns":[{
 				"name": "support.variable",
-				"match": "【.*】"
+				"match": "【.*?】"
 			}]
 		},
 		"operators": {
