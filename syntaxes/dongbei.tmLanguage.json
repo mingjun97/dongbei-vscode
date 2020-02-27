@@ -59,7 +59,7 @@
 		},
 		"variables":{
 			"patterns":[{
-				"name": "support.variable",
+				"name": "makeup.raw",
 				"match": "【.*?】"
 			}]
 		},
