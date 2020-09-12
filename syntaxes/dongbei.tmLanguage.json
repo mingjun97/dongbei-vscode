@@ -33,7 +33,7 @@
 		},
 		"variables":{
 			"patterns":[{
-				"name": "support.variable",
+				"name": "support.variable.quoted",
 				"match": "【.*?】"
 			}]
 		},
@@ -46,7 +46,7 @@
 		"numerics": {
 			"patterns": [{
 				"name": "constant.numeric",
-				"match": "(零|鸭蛋|一|二|俩|两|三|仨|四|五|六|七|八|九|十|[0-9]|的\\s*老\\s*(大|幺)?|有\\s*几\\s*个\\s*坑|拉\\s*饥\\s*荒)"
+				"match": "(零|鸭\\s*蛋|一|二|俩|两|三|仨|四|五|六|七|八|九|十|[0-9]|的\\s*老\\s*(大|幺)?|有\\s*几\\s*个\\s*坑|拉\\s*饥\\s*荒)"
 			}]
 		},
 		"comments": {
