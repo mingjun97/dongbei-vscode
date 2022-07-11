@@ -54,7 +54,7 @@
 		"functions": {
 			"patterns": [{
 				"name": "support.function",
-				"match": "(唠\\s*唠\\s*：|你\\s*吱\\s*声|求\\s*和)"
+				"match": "(唠\\s*唠\\s*[：:]|嘀\\s*咕\\s*[：:]|你\\s*吱\\s*声|求\\s*和)"
 			}]
 		},
 		"variables":{
@@ -92,7 +92,7 @@
 			},
 			{
 				"name": "keyword.control.dongbei.terminator",
-				"match": "(！|步?\\s*。|：)"
+				"match": "(！|!|步?\\s*。|：|:)"
 			}
 		]
 		},
